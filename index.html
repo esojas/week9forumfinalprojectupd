@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Start your project here-->
+    <!--This is the navigation bar section-->
+    <header>
+      <div id="Home">
+          <div class="toppart">
+              <nav>
+                  <h2>Fluffy Friends</h2>
+                  <ul class="navigation" id="sidemenu">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="services.html">Service</a></li>
+                      <li><a href="About Us.html">About</a></li>
+                      <li><a href="support.html">Support</a></li>
+                      <li><a href="Login.html" class="loginbut"><button type="button" class="btn btn-light" id="color" >Login</button></a></li>
+                      <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                  </ul>
+                  <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+              </nav>
+          </div>
+      </div>
+  </header>
+  <!--my part-->
+
+  <div class="bg-image d-flex justify-content-center align-items-center" style="background-image: url('images/doggroom.jpg'); height: 90vh;">
+      <div class="mask mask-custom" style="background-color: hsla(0, 0%, 0%, 0.6)">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white">
+            <h1 class="mb-3">We are determined to provide the best service for your pets</h1>
+            <h5 class="mb-4">All services have guaranteed satisfaction</h5>
+            <a class="btn btn-outline-light btn-lg m-2" href="#" role="button"
+              rel="nofollow" target="_blank">Get Started</a>
+            <a class="btn btn-outline-light btn-lg m-2" href="#" target="_blank"
+              role="button">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--cards-->
+
+    <section class="text-center" style="margin: 3%;">
+      <div class="d-flex justify-content-between">
+        <h4 class="mb-5"><strong>Our Services:</strong></h4>
+        
+        <button type="button" class="btn bts-xs btn-light bg-warning"><a href="services.html">Explore More</a></button>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="card">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+              <img src="images/petshotel.jpg" class="img-fluid" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Pets Hotel</h5>
+              <p class="card-text">
+                A place for your pets to stay while you're gone.
+              </p>
+              <a href="booking.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+              <img src="images/grooming.jpg" class="img-fluid" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Grooming</h5>
+              <p class="card-text">
+                Our grooming service is available 24/7
+              </p>
+              <a href="#!" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+              <img src="images/training.jpg" class="img-fluid" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Training</h5>
+              <p class="card-text">
+                Want to train your pets to do something?
+              </p>
+              <a href="#!" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5" />
+
+    <!--cards but information-->
+
+    <!--FAQ-->
+    <section class="text-center" style="margin: 3%;">
+      <div class="accordion">
+        <h1 style="text-align: center; margin-top: 20px;">FAQ</h1>
+        <div class="accordion-item">
+            <div class="item-header">
+                <h2 class="title">How do I order a service?</h2>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">Simply click on one of our services and proceed to the checkout, then enter your payment information and done!</p>
+        </div>
+        <div class="accordion-item">
+            <div class="item-header">
+                <h2 class="title">How do I know that I can trust this website company?</h2>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">We at fluffy friends always provide our best service no matter what time, place or condition your pet is in.</p>
+        </div>
+        <div class="accordion-item">
+            <div class="item-header">
+                <h2 class="title">How can I be certain that my appointment has been booked?</h2>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">You will receive an email of confirmation.</p>
+        </div>
+        <div class="accordion-item">
+            <div class="item-header">
+                <h2 class="title">How do I cancel a appointment?</h2>
+                <div class="icon">+</div>
+            </div>
+            <p class="text">You can cancel your appointment before 30 minutes has passed after the time you booked an appointment.</p>
+        </div>
+    </div>
+    </div>
+  </section>
+  <!--This is the footer bar section-->
+  <footer>
+      &copy; 2023 Fluffy Friends. All rights reserved.
+  </footer>
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.umd.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+        $('.item-header').click(function () {
+            var accordionItem = $(this).parent();
+            accordionItem.toggleClass("active").siblings(".accordion-item").removeClass("active");
+            accordionItem.find('.text').slideToggle(400);
+            $(".icon").text("+");
+            $(this).children(".icon").text(accordionItem.hasClass("active") ? "-" : "+");
+        });
+    });
+</script>
+  </body>
+</html>
